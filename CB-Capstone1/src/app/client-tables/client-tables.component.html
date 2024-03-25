@@ -1,0 +1,17 @@
+
+<table id="ClientInfoTable">
+    <tr>
+        <th>Client</th>
+        <th>Business FY</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let aClient of ClientList">
+        <td>{{aClient.name}}</td>
+        <td id="inqyear">{{aClient.inquiryYear}}</td>
+        <td>{{aClient.consultant}}</td>
+</tr>    
+</table>
+<input type="button" 
+       id="addClientButton" 
+       value="Add Client" 
+       routerLink="/addClient"/>
